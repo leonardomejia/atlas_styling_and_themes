@@ -1,0 +1,3 @@
+= Customizing a Theme
+
+Atlas gives you the power to customize the look and feel of your project, without needing to create a whole new theme. Every Atlas project includes a CSS folder, where you'd add custom CSS to override the theme styles.

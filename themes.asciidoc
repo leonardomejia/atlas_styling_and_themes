@@ -1,0 +1,32 @@
+= Creating a Theme
+
+Atlas uses themes to style projects. Each theme is built with CSS and split into 4 pieces, for each of the different output formats: PDF, EPUB, MOBI, and HTML. 
+
+A new theme should include the following:
+
+* pdf.css
+* epub.css
+* mobi.css
+* html.css
+* theme.json (required)
+* sample images (at least 1 required)
+* sample files (optional)
+
+== Theme Information
+
+Every theme must include a theme.json file that includes information about the theme, as follows:
+
+* Theme name
+* Creator
+* Description
+* Path to screenshots of the theme
+* Path to sample files using the theme
+
+sample theme.json
+{
+  "title" : "Atlas Trade Theme",
+  "creator" : "O'Reilly Media Inc.",
+  "description" : "",
+  "sample_images" : ["images/pdf1.png", "images/pdf2.png", "images/epub1.png", "images/epub2.png", "images/mobi1.png", "images/mobi2.png"],
+  "sample_files" : ["samples/trade.epub", "samples/trade.mobi", "samples/trade.pdf"]
+}
