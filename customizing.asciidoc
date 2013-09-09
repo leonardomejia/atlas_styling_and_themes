@@ -1,3 +1,38 @@
 = Customizing a Theme
 
 Atlas gives you the power to customize the look and feel of your project, without needing to create a whole new theme. Every Atlas project includes a CSS folder, where you'd add custom CSS to override the theme styles.
+
+Bullet points:
+
+* Add custom styles on top of your selected theme
+* Override/modify styles in your selected theme
+
+== Why Use Overrides?
+
+Sometimes you don't need or want to create a whole new theme--you may want to keep most of the design the same, but have the text flow in 2 columns in the PDF instead of 1, or add a custom style for special boxes that you're adding to your book that aren't part of one of the available themes. By using our override architecture, you can add some custom design without needing to define styles for every single element.
+
+== How to Do It
+
+The Build system looks for CSS overrides in a specific location in every project, and in files using specific names. Your project needs a folder called "Themes" at the root level, and then within that folder, there should be subfolders for each file format that you want to customize. Inside each of those subfolders, you'd add your CSS file using our predefined naming structure. Here's a picture of how it should look:
+
+	/themes
+	|
+	|-/epub
+	| |
+	| |- epub.css
+	|
+	|-/mobi
+	| |
+	| |- mobi.css
+	|
+	|-/pdf
+	| |
+	| |- pdf.css
+	|
+	|-/html
+	| |
+	| |- html.css
+
+Every new project created through Atlas comes with these folders built-in. If you created your project manually, no problem: just add the folders and files yourself.
+
+Atlas just uses plain ol' CSS to style all book formats, including the PDF and print files. Check out some of our existing themes for examples of how to write the CSS, check out our tutorial here, or just search the Web and try stuff out--don't worry, you can't break it ;) 
